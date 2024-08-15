@@ -81,8 +81,8 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    title: "Le Petit Nuage",
+    des: "Le Petit Nuage est une societe base au Rwanda a Gisenyi. Qui dans les domains educatifs.",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "Coming soon",
