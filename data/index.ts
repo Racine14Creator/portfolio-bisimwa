@@ -89,11 +89,11 @@ export const projects = [
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://github.com/racine14creator",
+    title: "Eglise Restauration Church",
+    des: "Un siteWeb Vitrine pour l'Eglise Restauration Church du Congo.",
+    img: "/erc.png",
+    iconLists: ["/next.svg", "/tail.svg", "/git.svg", "/ts.svg"],
+    link: "https://restauration-six.vercel.app/",
   },
   {
     id: 4,
