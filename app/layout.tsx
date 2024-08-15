@@ -17,6 +17,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
+      <head>
+        <link
+          rel='shortcut icon'
+          href='https://avatars.githubusercontent.com/u/148460524?v=4'
+          type='image/x-icon'
+        />
+      </head>
       <body className={inter.className} suppressHydrationWarning>
         <ThemeProvider
           attribute='class'
