@@ -205,14 +205,17 @@ export const workExperience = [
 export const socialMedia = [
   {
     id: 1,
+    link: "https://github.com/Racine14Creator",
     img: "/git.svg",
   },
   {
     id: 2,
+    link: "https://web.facebook.com/grace14.bisimwa",
     img: "/twit.svg",
   },
   {
     id: 3,
+    link: "https://github.com/Racine14Creator",
     img: "/link.svg",
   },
 ];
