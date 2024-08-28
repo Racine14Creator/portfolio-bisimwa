@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Racine14 Creator",
-  description: "La simple dans tout mais bien.",
+  description: "La simplicite dans tout mais bien.",
 };
 
 export default function RootLayout({
