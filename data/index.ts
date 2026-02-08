@@ -50,8 +50,8 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a Website a school in Gisenyi.",
-    description: "The Inside Scoop",
+    title: "I am working in a company called Remote Labs SA in Luxembourg as a Frontend Developer.",
+    description: "RMT Labs SA",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -74,13 +74,21 @@ export const projects = [
   {
     id: 1,
     title: "My Portfolio",
-    des: "I am a full-stack React developer. I am based in Congo at Goma but also in Rwanda where I am right now.",
+    des: "I am a full-stack React developer. I am based in Rwanda at Kigali but also in Rwanda where I am right now.",
     img: "/portfolio-page.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "https://portfolio-bisimwa.vercel.app/",
   },
   {
     id: 2,
+    title: "Remote Labs SA",
+    des: "I am working in a company called Remote Labs SA in Luxembourg as a Frontend Developer.",
+    img: "/rmt.png",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/fm.svg"],
+    link: "https://skillbourg.com/",
+  },
+  {
+    id: 3,
     title: "Le Petit Nuage",
     des: "Le Petit Nuage est une societe base au Rwanda a Gisenyi. Qui dans les domains educatifs.",
     img: "/LePetitNuage.png",
@@ -88,7 +96,7 @@ export const projects = [
     link: "https://le-petit-nuage.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Eglise Restauration Church",
     des: "Un siteWeb Vitrine pour l'Eglise Restauration Church du Congo.",
     img: "/erc.png",
@@ -96,7 +104,7 @@ export const projects = [
     link: "https://restauration-six.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Animated Apple Iphone 3D Website",
     des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
     img: "/p4.svg",
@@ -207,15 +215,18 @@ export const socialMedia = [
     id: 1,
     link: "https://github.com/Racine14Creator",
     img: "/git.svg",
+    name: "GitHub",
   },
   {
     id: 2,
     link: "https://web.facebook.com/grace14.bisimwa",
     img: "/twit.svg",
+    name: "Facebook",
   },
   {
     id: 3,
-    link: "https://github.com/Racine14Creator",
+    link: "https://www.linkedin.com/in/chiruza-bisimwa-grace-1a20a3189/",
     img: "/link.svg",
+    name: "LinkedIn",
   },
 ];
