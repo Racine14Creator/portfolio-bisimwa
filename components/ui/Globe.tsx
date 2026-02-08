@@ -96,7 +96,9 @@ export function Globe({ globeConfig, data }: WorldProps) {
       _buildData();
       _buildMaterial();
     }
-  }, [globeRef.current]);
+    // Ref and build functions; run when data or config changes
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [data, globeConfig]);
 
   const _buildMaterial = () => {
     if (!globeRef.current) return;
@@ -162,6 +164,8 @@ export function Globe({ globeConfig, data }: WorldProps) {
         });
       startAnimation();
     }
+    // Globe init with ref + defaultProps; startAnimation is stable for this effect
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [globeData]);
 
   const startAnimation = () => {
@@ -221,7 +225,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
     return () => {
       clearInterval(interval);
     };
-  }, [globeRef.current, globeData]);
+  }, [globeData, data.length]);
 
   return (
     <>
@@ -237,7 +241,7 @@ export function WebGLRendererConfig() {
     gl.setPixelRatio(window.devicePixelRatio);
     gl.setSize(size.width, size.height);
     gl.setClearColor(0xffaaff, 0);
-  }, []);
+  }, [gl, size.width, size.height]);
 
   return null;
 }

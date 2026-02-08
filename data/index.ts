@@ -74,7 +74,7 @@ export const projects = [
   {
     id: 1,
     title: "My Portfolio",
-    des: "I am a full-stack React developer. I am based in Rwanda at Kigali but also in Rwanda where I am right now.",
+    des: "I am a full-stack React developer. I am based in Rwanda at Kigali.",
     img: "/portfolio-page.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "https://portfolio-bisimwa.vercel.app/",
