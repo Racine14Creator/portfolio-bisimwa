@@ -27,7 +27,7 @@ export default function Hero() {
             words='Transforming Concepts into Seamless User Experiences'
           />
           <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
-            Hi, I&apos;m Bisimwa Grace a Software Developer based in Rwanda
+            Hi, I&apos;m Bisimwa Grace a IT Manager, Data Analyst and Software Developer based in Rwanda
           </p>
           <a href='#about'>
             <MagicButton
