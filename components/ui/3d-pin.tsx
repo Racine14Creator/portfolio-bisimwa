@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { cn } from "@/utils/cn";
 
 export const PinContainer = ({
@@ -17,6 +17,7 @@ export const PinContainer = ({
   className?: string;
   containerClassName?: string;
 }) => {
+  const router = useRouter();
   const [transform, setTransform] = useState(
     "translate(-50%,-50%) rotateX(0deg)"
   );
@@ -28,15 +29,31 @@ export const PinContainer = ({
     setTransform("translate(-50%,-50%) rotateX(0deg) scale(1)");
   };
 
+  const navigateTo = (e: React.MouseEvent) => {
+    const target = e.target as HTMLElement;
+    if (target.closest('a')) return;
+    router.push(href || "/");
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      router.push(href || "/");
+    }
+  };
+
   return (
-    <Link
+    <div
+      role="link"
+      tabIndex={0}
       className={cn(
         "relative group/pin z-50  cursor-pointer",
         containerClassName
       )}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
-      href={href || "/"}
+      onClick={navigateTo}
+      onKeyDown={handleKeyDown}
     >
       <div
         style={{
@@ -55,7 +72,7 @@ export const PinContainer = ({
         </div>
       </div>
       <PinPerspective title={title} href={href} />
-    </Link>
+    </div>
   );
 };
 
