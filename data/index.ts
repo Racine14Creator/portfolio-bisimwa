@@ -9,7 +9,7 @@ export const gridItems = [
   {
     id: 1,
     title:
-      "Racine14 Creator prioritize client collaboration, fostering open communication. I can speak english and french.",
+      "Racine14 Creator prioritize client collaboration, fostering open communication. I can speak English and French.",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
