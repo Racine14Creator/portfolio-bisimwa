@@ -50,7 +50,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "I am working in a company called Remote Labs SA in Luxembourg as a Frontend Developer.",
+    title: "I am working in Remote Labs SA in Luxembourg as a Software Developer.",
     description: "RMT Labs SA",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
